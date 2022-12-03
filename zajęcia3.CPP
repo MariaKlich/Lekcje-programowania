@@ -6,11 +6,12 @@ int main()
    long long pesel;
    int testow;
     int sprawdzonych=0;
-    int suma=0;
+    int suma;
    int ostatnia;
    cin>>testow;
    while(sprawdzonych<testow)
    {
+   suma=0
    cin>>pesel;
     //11-cyfra
     ostatnia=pesel%10;
