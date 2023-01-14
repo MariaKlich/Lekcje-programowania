@@ -2,17 +2,21 @@
 
 using namespace std;
 
-    bool czyJednocyfrowaINieparzysta(int x){
-    return (x<10&&x>-10&&x%2!=0);
-    }
 int main()
 {
-    int liczba=1;
-    do{
-    cin>>liczba;
-    if(liczba==0){
-    break;
-    }
-   cout<<czyJednocyfrowaINieparzysta(liczba)<<endl;
-}   while(liczba!=0);
+    int tab[10];
+   for(int i=0; i<10; i++)
+   {
+       cin >> tab[i];
+   }
+   for(int i=0; i<10; i++)
+   {
+       if(tab[i]%3==0 && tab[i]%5==0)
+           cout << tab[i] << endl; // program wypisuje liczby podzielne jednoczeœnie
+                                          // przez 3 i przez 5
+   }
+  system("pause");
+  return 0;
 }
+
+
